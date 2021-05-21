@@ -42,7 +42,7 @@ It's a process where a web-form checks if the information provided by a user is 
 
 1. In 1-2 sentences, define end to end testing.
 
-End to end testing is a process that tests an entire software product from beginning to end to ensure the application flow behaces as expected.
+End to end testing is a process that tests an entire software product from beginning to end to ensure the application flow behaces as expected..
 
 ## Instructions
 
