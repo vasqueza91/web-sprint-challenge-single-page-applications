@@ -102,14 +102,14 @@ export default function App() {
       <div className='nav-links'>
         {/* 👉 STEP 3 - Make Links to navigate us Home (`/`) and Shop (`/items-list`) */}
         <Link to='/'>Home</Link>
-        <Link to='/pizza'>Pizza</Link>
+        <Link id='order-pizza' to='/pizza'>Pizza</Link>
       </div>
     </nav>
     <Switch>
       <Route path='/' exact>
         <Home />
       </Route>
-      <Route path='/pizza' id='order-pizza'>
+      <Route  path='/pizza' >
         <PizzaForm
           values={formValues}
           change={inputChange}
