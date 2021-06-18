@@ -11,7 +11,7 @@ import schema from "./FormSchema"
 const initialFormValues = {
   name: '',
   size: '',
-  sauce: '',
+  // sauce: '',
   special: '',
   pepperoni: false,
   ham: false,
@@ -22,7 +22,7 @@ const initialFormValues = {
 const initialFormErrors = {
   name: '',
   size: '',
-  sauce: '',
+  // sauce: '',
 }
 
 const initialOrders = []
@@ -80,7 +80,7 @@ export default function App() {
       name: formValues.name.trim(),
       special: formValues.special.trim(),
       size: formValues.size,
-      sauce: formValues.sauce,
+      // sauce: formValues.sauce,
       // toppings: ['pepperoni', 'ham', 'olives', 'bacon'].filter(topping => formValues[topping])
       pepperoni: formValues.pepperoni,
       ham: formValues.ham,
