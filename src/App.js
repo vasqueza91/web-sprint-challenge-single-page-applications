@@ -39,7 +39,7 @@ export default function App() {
   const getOrders = () => {
     axios.get('https://reqres.in/api/orders')
     .then(res => {
-      console.log(res.data.data)
+      // console.log(res.data.data)
       setOrders(res.data.data)
     })
     .catch(err => {
