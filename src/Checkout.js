@@ -10,9 +10,13 @@ function Order({ details }) {
       <h2>{details.name}</h2>
       <p>Size: {details.size}</p>
       <p>Sauce: {details.sauce}</p>
+      <p>Pepperoni: {details.pepperoni}</p>
+      <p>Ham: {details.ham}</p>
+      <p>Olives: {details.olives}</p>
+      <p>Bacon: {details.bacon}</p>
       
 
-      {
+      {/* {
         !!details.toppings && !!details.toppings.length &&
         <div>
           Toppings:
@@ -20,7 +24,7 @@ function Order({ details }) {
             {details.toppings.map((like, idx) => <li key={idx}>{like}</li>)}
           </ul>
         </div>
-      }
+      } */}
       <p>Special Instructions: {details.special}</p>
     </div>
   )

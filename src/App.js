@@ -81,7 +81,11 @@ export default function App() {
       special: formValues.special.trim(),
       size: formValues.size,
       sauce: formValues.sauce,
-      toppings: ['pepperoni', 'ham', 'olives', 'bacon'].filter(topping => formValues[topping])
+      // toppings: ['pepperoni', 'ham', 'olives', 'bacon'].filter(topping => formValues[topping])
+      pepperoni: formValues.pepperoni,
+      ham: formValues.ham,
+      olives: formValues.olives,
+      bacon: formValues.bacon
     }
     postNewOrder(newOrder)
   }
