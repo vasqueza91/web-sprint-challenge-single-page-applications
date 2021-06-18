@@ -1,15 +1,29 @@
-import React from 'react';
+import React from 'react'
 
-function Checkout(props) {
-    const {newOrder} = props
-    return (
+function Order({ details }) {
+  if (!details) {
+    return <h3>Working fetching your order details...</h3>
+  }
+
+  return (
+    <div className='order container'>
+      <h2>{details.name}</h2>
+      <p>Size: {details.size}</p>
+      <p>Sauce: {details.sauce}</p>
+      
+
+      {
+        !!details.toppings && !!details.toppings.length &&
         <div>
-            <h2>Your Order Has Been Submitted And Is Ready To Bake</h2>
-            <p>Name: {newOrder.name}</p>
-            <p>Size: {newOrder.size}</p>
-            <p>Sauce: {newOrder.sauce}</p>
-            <p>Special Instructions: {newOrder.special}</p>
+          Toppings:
+          <ul>
+            {details.toppings.map((like, idx) => <li key={idx}>{like}</li>)}
+          </ul>
         </div>
-    )
+      }
+      <p>Special Instructions: {details.special}</p>
+    </div>
+  )
 }
-export default Checkout
+
+export default Order

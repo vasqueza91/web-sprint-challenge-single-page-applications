@@ -1,6 +1,6 @@
 describe('User Onboarding App', () => {
     beforeEach(() => {
-        cy.visit("http://localhost:58705/pizzaform/")
+        cy.visit("http://localhost:3006/pizza/")
     })
 
     const nameInput = () => cy.get('input[name=name]')
