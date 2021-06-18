@@ -10,9 +10,9 @@ const formSchema = yup.object().shape({
         .string()
         .oneOf(['small', 'medium', 'large', 'xl'], 'Size is required'),
     
-    sauce: yup
-        .string()
-        .oneOf(['marinara', 'buffalo', 'alfredo'], 'Sauce is required'),
+    // sauce: yup
+    //     .string()
+    //     .oneOf(['marinara', 'buffalo', 'alfredo'], 'Sauce is required'),
     
     pepperoni: yup.boolean(),
     ham: yup.boolean(),
