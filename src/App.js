@@ -51,12 +51,11 @@ export default function App() {
     axios.post('https://reqres.in/api/orders', newOrder)
     .then(res => {
       setOrders([res.data, ...orders])
+      setFormValues(initialFormValues)
     })
     .catch(err => {
-      console.log(err)
-    })
-    .finally(() => {
       setFormValues(initialFormValues)
+      console.log(err)
     })
   }
 
