@@ -73,7 +73,7 @@ export default function PizzaForm(props) {
         {/* ////////// RADIO BUTTONS ////////// */}
         {/* ////////// RADIO BUTTONS ////////// */}
         {/* ////////// RADIO BUTTONS ////////// */}
-        <label>Marinara
+        {/* <label>Marinara
           <input 
             type='radio'
             name='sauce'
@@ -101,7 +101,7 @@ export default function PizzaForm(props) {
             onChange={onChange}
             checked={values.sauce === 'alfredo'}
           />
-        </label>
+        </label> */}
       </div>
 
       <div className='form-group checkboxes'>
